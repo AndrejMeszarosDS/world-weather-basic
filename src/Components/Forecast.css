@@ -1,0 +1,55 @@
+.oneDay {
+  border-width: 3px !important;
+  width: calc((100% / 8) - 3px);
+  flex-shrink: 0;
+  margin: 1px;
+  height: 150px;
+}
+
+.allDay {
+  flex-shrink: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .oneDay {
+    width: calc((100% / 6) - 2px);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .oneDay {
+    width: calc((100% / 5) - 2px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .oneDay {
+    width: calc((100% / 4) - 2px);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .oneDay {
+    width: calc((100% / 3) - 2px);
+  }
+}
+
+.oneDay .dayName {
+  font-size: 14px;
+  margin: 0;
+}
+
+.oneDay .date {
+  font-size: 10px;
+  margin: 0;
+}
+
+.oneDay .temp {
+  font-size: 16px;
+  margin: 0;
+}
+
+.oneDay .description {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
