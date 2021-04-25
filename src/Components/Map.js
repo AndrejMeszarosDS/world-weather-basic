@@ -39,9 +39,7 @@ export const Map = ({ options }) => {
     if (!window.google) {
       const script = document.createElement(`script`);
       script.type = `text/javascript`;
-      script.src =
-        `https://maps.google.com/maps/api/js?key=` +
-        process.env.REACT_APP_API_KEY;
+      script.src = `https://maps.google.com/maps/api/js?key=AIzaSyDCwsPowpBTphI21iTMjQHrDtbwxvIH-5g`;
       const headScript = document.getElementsByTagName(`script`)[0];
       headScript.parentNode.insertBefore(script, headScript);
       script.addEventListener(`load`, onLoad);
