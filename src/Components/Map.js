@@ -7,7 +7,7 @@ export const Map = ({ options }) => {
 
   const mapClicked = (latlng) => {
     const weatherURL =
-      `http://api.openweathermap.org/data/2.5/onecall?lat=` +
+      `https://api.openweathermap.org/data/2.5/onecall?lat=` +
       latlng.lat +
       `&lon=` +
       latlng.lng +
